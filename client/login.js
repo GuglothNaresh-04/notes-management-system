@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/api";
+const API_URL = "https://notes-management-system-9xa3.onrender.com/api";
 
 async function register() {
 
