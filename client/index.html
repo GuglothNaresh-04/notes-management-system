@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notes Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav>
+
+        <h2>📝 Notes Management System</h2>
+
+        <button onclick="logout()">Logout</button>
+
+    </nav>
+
+
+    <!-- Main Container -->
+
+    <div class="container">
+
+        <!-- Create Note -->
+
+        <div class="add-note">
+
+            <h2>Create New Note</h2>
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Enter Note Title"
+            >
+
+            <textarea
+                id="content"
+                placeholder="Write your note here..."
+            ></textarea>
+
+            <button onclick="createNote()">
+                Add Note
+            </button>
+
+        </div>
+
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search Notes..."
+                onkeyup="searchNotes()"
+            >
+
+        </div>
+
+
+        <!-- Notes -->
+
+        <div id="notesContainer">
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
