@@ -1,4 +1,4 @@
-const API = "https://YOUR-RENDER-URL.onrender.com/api";
+const API_URL = "https://YOUR-RENDER-URL.onrender.com/api";
 
 // Get JWT Token
 const token = localStorage.getItem("token");
